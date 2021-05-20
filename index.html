@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>something</title>
+    <title>To Do List</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="short icon" href="images/icon.png" />
+    <script src="js/clock.js" defer></script>
+    <script src="js/gretting.js" defer></script>
+    <script src="js/todo.js" defer></script>
+    <script src="js/bg.js" defer></script>
+    <script src="js/weather.js" defer></script>
+    <meta property="og:site_name" content="To Do List" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content="To Do List" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="To Do list" name="description" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content=images/icon.png>
+    <meta property="og:description" content="To Do List" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1>00:00:00</h1>
+    <div class="main_container">
+      <div class="js-clock clock">
+        <h1>00:00:00</h1>
+      </div>
+      <form class="js-form-greetings form">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <form class="js-toDoForm toDoForm">
+        <input type="text" placeholder="Write a to do!!!" />
+      </form>
+      <ul class="js-toDoList toDoList"></ul>
     </div>
-    <form class="js-form-greetings form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do?" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <script src="clock.js"></script>
-    <script src="gretting.js"></script>
-    <script src="todo.js"></script>
+    <div class="top_container">
+      <strong class="js-weather weather"></strong>
+    </div>
   </body>
 </html>
